@@ -25,6 +25,27 @@ body {
   background: var(--body-color);
   font-family: "Poppins", sans-serif;
 }
+.add{
+  position: absolute;
+  right: 34%;
+  top: 2rem;
+  font-size: 1.5rem;
+  background-color: #a55eea;
+  color: #fff;
+border: 2px solid #a55eea;
+border-radius: 10px;
+display: flex;
+padding: 2px;
+}
+.add:hover {
+  color: var(--black-color);
+transition: 0.4s linear;
+}
+.add:active{
+  transform: translateY(1.9px);
+  box-shadow: 0 5px #666;
+}
+
 .nots {
   background: var(--white-color);
   height: 25rem;
