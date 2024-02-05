@@ -1,15 +1,41 @@
-const notsEL = document.querySelector(".nots");
-const editbtnEL = document.querySelector(".editbtn");
-const deletbtnEL = document.querySelector(".deletbtn");
-const mainEL = document.querySelector(".main");
-const textareaEL = document.querySelector("textarea");
+const  addBtn  =  document.getElementById('add');
+ 
+addBtn.addEventListener("click", ()=> addNewnote())
 
-editbtnEL.addEventListener("click", () => {
-  mainEL.classList.toggle("hidden");
-  textareaEL.classList.toggle("hidden");
-});
 
-textareaEL.addEventListener("input", (e) => {
-  const { value } = e.target;
-  mainEL.innerHTML = marked(value);
-});
+function addNewnote(text = " ") {
+  const note =  document.createElement('div');
+  note.classList.add('nots')
+
+  note.innerHTML = `
+  <div class="tools">
+        
+  <button class="editbtn">
+          <ion-icon name="create-outline"></ion-icon>
+        </button>
+
+        <button class="deletbtn">
+          <ion-icon name="close-circle-outline"></ion-icon>
+          </button>
+       
+          </div>
+      
+          <div class="main ${text ? " " : "op"}"></div>
+      
+          <textarea class="${text ? "hidden " : " "}"></textarea>
+  `
+
+
+
+  document.body.appendChild(note);
+}
+
+
+  const editBtn = note.querySelector('.edit')
+  const deleteBtn = note.querySelector('.deletbtn')
+  const main = note.querySelector('.main')
+  const textArea = note.querySelector('textarea')
+
+deleteBtn.addEventListener('click',()=>{
+  note.remove();
+})
