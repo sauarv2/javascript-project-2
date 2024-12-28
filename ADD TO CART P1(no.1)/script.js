@@ -1,3 +1,5 @@
+/*
+
 // add to cart Function...................
 var addItem = 0;
 
@@ -9,6 +11,7 @@ function Cart(item) {
   const cartdiv = document.createElement("div");
   cartdiv.classList.add("cartIMG");
   cartdiv.setAttribute("id", addItem);
+
   //   **** SET THE IMAGE ****************************
 
   var image = document.createElement("img");
@@ -51,3 +54,8 @@ function Cart(item) {
 function del(items) {
   document.getElementById(items).remove();
 }
+
+
+*/
+
+/**************************************************** */
