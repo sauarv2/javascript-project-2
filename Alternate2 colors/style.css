@@ -1,6 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffeaa7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  min-height: 100vh;
+}
+.boxxx {
+  border: 5px solid #7f8fa6;
+  width: 25rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding: 5rem 0 5rem 0;
+}
+#my_box {
+  margin-bottom: 2rem;
+}
 .go {
   color: green;
 }
 .stop {
   color: red;
+}
+
+.goA {
+  border: 5px solid red;
+
+  width: 25rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding: 5rem 0 5rem 0;
+}
+.goB {
+  border: 5px solid green;
+  width: 25rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding: 5rem 0 5rem 0;
+  bor
 }
